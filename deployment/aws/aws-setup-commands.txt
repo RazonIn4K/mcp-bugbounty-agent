@@ -1,0 +1,14 @@
+# AWS CLI Commands for MCP Bug Bounty Agent Setup
+
+# Create Role
+aws iam create-role --role-name BedrockMCPAgentRole --assume-role-policy-document file://trust-policy.json --description "IAM role for MCP Bug Bounty Agent on Amazon Bedrock"
+
+# Attach Policy
+aws iam put-role-policy --role-name BedrockMCPAgentRole --policy-name MCPBugBountyAgentPolicy --policy-document file://permission-policy.json
+
+# Get Role Arn
+aws iam get-role --role-name BedrockMCPAgentRole --query "Role.Arn" --output text
+
+# List Roles
+aws iam list-roles --query "Roles[?RoleName==`BedrockMCPAgentRole`].[RoleName,Arn]" --output table
+
