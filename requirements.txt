@@ -1,0 +1,76 @@
+# MCP Bug Bounty Agent - Production Dependencies
+# Core requirements for the AI-powered vulnerability research agent
+
+# HTTP and API client libraries
+requests>=2.31.0
+urllib3>=2.0.0
+
+# Docker integration for isolated testing
+docker>=6.1.0
+
+# UI and console output
+colorama>=0.4.6
+
+# Web scraping and parsing
+beautifulsoup4>=4.12.2
+
+# Async programming
+asyncio-mqtt>=0.16.0
+
+# Configuration management
+python-dotenv>=1.0.0
+
+# Data validation and serialization
+pydantic>=2.5.0
+
+# Payment processing (Premium tier)
+stripe>=7.0.0
+
+# JSON handling and data structures
+orjson>=3.9.0
+
+# Development dependencies (optional)
+pytest>=7.4.0
+black>=23.12.0
+flake8>=6.1.0
+mypy>=1.7.0
+
+# Documentation generation
+mkdocs>=1.5.0
+mkdocs-material>=9.4.0
+
+# Security and encryption
+cryptography>=41.0.0
+bcrypt>=4.1.0
+
+# Monitoring and observability
+prometheus-client>=0.19.0
+structlog>=23.2.0
+
+# Optional: Enhanced features
+# Uncomment for additional functionality
+
+# Machine Learning (for advanced pattern recognition)
+# scikit-learn>=1.3.0
+# numpy>=1.24.0
+
+# Database support (for enterprise features)
+# sqlalchemy>=2.0.0
+# alembic>=1.13.0
+
+# Advanced HTTP client
+# httpx>=0.25.0
+
+# Job queuing (for batch processing)
+# celery>=5.3.0
+# redis>=5.0.0
+
+# Cloud integrations
+# boto3>=1.34.0  # AWS
+# azure-identity>=1.15.0  # Azure
+# google-cloud-storage>=2.10.0  # GCP
+
+# Additional security tools integration
+# python-nmap>=0.7.1
+# shodan>=1.30.0
+# censys>=2.2.0

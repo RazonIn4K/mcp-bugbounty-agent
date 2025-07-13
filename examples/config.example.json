@@ -1,0 +1,24 @@
+{
+  "agent": {
+    "name": "MCP Bug Bounty Research Agent",
+    "version": "1.2.0",
+    "premium": false,
+    "use_docker": false
+  },
+  "apis": {
+    "github_token": "ghp_your_token_here",
+    "stripe_secret_key": "sk_test_your_key_here",
+    "openai_api_key": "sk_your_openai_key"
+  },
+  "features": {
+    "enable_docker": true,
+    "enable_burp_integration": true,
+    "enable_real_apis": true,
+    "max_concurrent_tests": 5
+  },
+  "compliance": {
+    "gdpr_enabled": true,
+    "data_retention_days": 90,
+    "audit_logging": true
+  }
+}
